@@ -7,12 +7,92 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #ccc;
+  border-top-color: #4e75ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+
+}
+.is-hidden {
+  display: none;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.form input {
+  width: 300px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3b5bdb;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  list-style: none;
+}
+
+
+.gallery-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+text-align: center;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-item span {
+  font-weight: 600;
+}
